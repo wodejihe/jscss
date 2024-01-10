@@ -1,0 +1,218 @@
+.xc_report_reportdiv{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 0 !important;
+    margin: 10px auto !important;
+}
+
+.xc_report_reportbut{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    padding: 2px 0;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.xc_report_reportbut::before{
+    content: '举报';
+    font-size: 12px;
+}
+
+#xc_report_form{
+    padding: 10px 20px 20px 20px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+#xc_report_form .xc_report_form_p{
+    position: relative;
+    font-size: 14px;
+    padding-left: 20px;
+    line-height: 35px;
+    height: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#xc_report_form .xc_report_form_p::before{
+    content: "※";
+    font-size: 12px;
+    position: absolute;
+    color: red;
+    left: 0px;
+    top: 0px;
+}
+
+#xc_report_form .xc_report_form_p span{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#xc_report_form ul {
+    clear:both;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#xc_report_form ul li input{
+    display: none;
+}
+
+#xc_report_form ul::after{
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+#xc_report_form ul li{
+    width: 50%;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    color: #888;
+    font-size: 14px;
+    padding-left: 25px;
+    position: relative;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+#xc_report_form li label{
+    cursor: pointer;
+}
+
+#xc_report_form li label input[type="checkbox"] + span{
+    position: absolute;
+    left: 0;
+    top:9.5px;
+    width: 16px;
+    height: 16px;
+    border:1px solid #ddd;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+#xc_report_form li label input[type="checkbox"]:checked + span:after   
+{   
+    content: ' ';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 16px;
+    height: 16px;
+    background-size: 12px 12px !important;
+    background: url(img/duihao.svg) 2px 2px no-repeat;
+    box-sizing: border-box;
+    background-color: #2196f3;
+}
+
+
+#xc_report_form li label input[type="radio"] + span{
+    position: absolute;
+    left: 0;
+    top:9.5px;
+    width: 16px;
+    height: 16px;
+    border:1px solid #ddd;
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#xc_report_form li label input[type="radio"]:checked + span{
+    border:1px solid #2196f3;
+}
+
+#xc_report_form li label input[type="radio"]:checked + span:after   
+{   
+    content: ' ';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    background-color: #2196f3;
+    border-radius: 50%;
+}
+
+#xc_report_form textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#xc_report_form>input{
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+#xc_report_form>div>input{
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.xc_report_vfdiv{
+    position: relative;
+}
+
+.xc_report_vfdiv img{
+    position: absolute;
+    right: 0px;
+    border: 1px solid #ddd;
+    height: 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#xc_report_form input::-webkit-input-placeholder{
+    color:#ddd;
+    font-size: 12px;
+}
+#xc_report_form input:-ms-input-placeholder{
+    color:#ddd;
+    font-size: 12px;
+}
+
+#xc_report_form textarea::-webkit-input-placeholder{
+    color:#ddd;
+    font-size: 12px;
+}
+#xc_report_form textarea:-ms-input-placeholder{
+    color:#ddd;
+    font-size: 12px;
+}
+
+.xc_report_alerta{
+    margin: 0 5px;
+    color: #2196f3;
+}
+
+@media screen and (max-width: 350px){
+    #xc_report_form ul{
+        padding-left: 5px;
+    }
+    #xc_report_form ul li{
+        width:100%;
+    }
+}
